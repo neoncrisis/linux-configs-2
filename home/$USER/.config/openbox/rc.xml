@@ -305,7 +305,7 @@
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
-        <command>slimlock</command>
+        <command>slock</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>lock</name>
