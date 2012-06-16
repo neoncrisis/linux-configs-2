@@ -2,8 +2,8 @@
 $( nm-applet --sm-disable &>> /tmp/nm-applet.log ) &
 
 ## Wallpaper & Compositing
-#$( xcompmgr &>> /tmp/xcompmgr.log ) &
-#$( nitrogen --restore &>> /tmp/nitrogen.log ) &
+$( xcompmgr &>> /tmp/xcompmgr.log ) &
+$( nitrogen --restore &>> /tmp/nitrogen.log ) &
 
 ## Panels
 $( tint2 &>> /tmp/tint2.log ) &
