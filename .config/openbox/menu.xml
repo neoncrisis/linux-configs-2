@@ -136,7 +136,7 @@
 			<item label="Edit /etc/rc.conf">
 				<action name="Execute">
 					<execute>
-						sudo leafpad /etc/rc.conf
+						sudo subl /etc/rc.conf
 					</execute>
 				</action>
 			</item>
