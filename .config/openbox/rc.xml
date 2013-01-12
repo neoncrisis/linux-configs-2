@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc">
   <resistance>
     <strength>10</strength>
@@ -22,7 +23,7 @@
        mouse into it, also raise the window -->
   </focus>
   <placement>
-    <policy>UnderMouse</policy>
+    <policy>Smart</policy>
     <!-- 'Smart' or 'UnderMouse' -->
     <center>yes</center>
     <!-- whether to place windows in the center of the free area found or
@@ -251,10 +252,10 @@
     </keybind>
     <keybind key="W-b">
       <action name="Execute">
-        <command>iron</command>
+        <command>chromium</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>SRWare Iron</name>
+          <name>Chromium</name>
         </startupnotify>
       </action>
     </keybind>
@@ -272,7 +273,7 @@
         <command>terminator</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>Terminator</name>
+          <name>terminator</name>
         </startupnotify>
       </action>
     </keybind>
@@ -285,12 +286,15 @@
         </startupnotify>
       </action>
     </keybind>
+    <keybind key="W-v">
+      <action name="ToggleMaximizeVert"/>
+    </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>geany</command>
+        <command>subl</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>geany</name>
+          <name>Editor</name>
         </startupnotify>
       </action>
     </keybind>
@@ -314,10 +318,10 @@
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>gmrun</command>
+        <command>update_doc</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>gmrun</name>
+          <name>DOC</name>
         </startupnotify>
       </action>
     </keybind>
@@ -334,6 +338,14 @@
           <name>SpaceFM Search</name>
         </startupnotify>
       </action>
+    </keybind>
+    <keybind key="W-space">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
+    <keybind key="W-a">
+      <action name="ToggleMaximizeFull"/>
     </keybind>
     <keybind key="W-Right">
       <action name="MoveToEdgeEast"/>
@@ -360,6 +372,16 @@
     <keybind key="XF86AudioMute">
       <action name="Execute">
         <command>amixer set Master toggle</command>
+      </action>
+    </keybind>
+    <keybind key="XF86ScreenSaver">
+      <action name="Execute">
+        <command>slimlock</command>
+      </action>
+    </keybind>
+    <keybind key="XF86Sleep">
+      <action name="Execute">
+        <command>sudo pm-suspend</command>
       </action>
     </keybind>
   </keyboard>

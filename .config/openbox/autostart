@@ -1,21 +1,22 @@
 ## Network
-$( nm-applet --sm-disable &>> /tmp/nm-applet.log ) &
+$(/usr/bin/nm-applet --sm-disable &>> /tmp/nm-applet.log ) &
 
-## Wallpaper & Compositing
-$( xcompmgr &>> /tmp/xcompmgr.log ) &
+## Wallpaper, Compositing & Conky
 $( nitrogen --restore &>> /tmp/nitrogen.log ) &
+$( conky -c ~/.config/conky/.conkyrc &>> /tmp/conky.log ) &
+$( xcompmgr &>> /tmp/xcompmgr.log ) &
 
 ## Panels
 $( tint2 &>> /tmp/tint2.log ) &
+$( fbxkb &>> /tmp/fbxkb.log ) &
 $( xfce4-panel &>> /tmp/xfce4-panel.log ) &
 
 ## Automounting
 $( spacefm --daemon-mode &>> /tmp/spacefm.log ) &
-## Conky
-$( conky -c ~/.config/conky/.conkyrc &>> /tmp/conky.log ) &
 
-## Volume Manager
+## Volume & Clipboard Manager
 $( volumeicon -b &>> /tmp/volumeicon.log ) &
+$( clipit &>> /tmp/clipit.log ) &
 
-## Clipboard Manager
-$( parcellite &>> /tmp/parcellite.log ) &
+# Openbox Menu
+openbox-menu -p -o abapps.xml -t 'lxterminal -e' &
