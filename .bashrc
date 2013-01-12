@@ -7,11 +7,12 @@
 
 ## Bash
 shopt -s checkhash			# bash will check hash table for command before searching path
-shopt -s checkwinsize			# update window size after each command
+shopt -s checkwinsize		# update window size after each command
 
 ## CD
+shopt -s autocd             # Automatically cd when a bare path is typed
 shopt -s cdspell  			# Correct errors in directory names when using CD
-shopt -s cdable_vars			# Enable cd to use variable expansion
+shopt -s cdable_vars		# Enable cd to use variable expansion
 shopt -s dirspell			# spelling correction on directory names during word completion
 
 ## HISTORY
@@ -24,7 +25,7 @@ shopt -s histappend			# append to the history file, don't overwrite it
 ## Expansion
 shopt -s dotglob			# include filenames beginning with a `.' in the results of filename expansion.
 #shopt -s expand_aliases		# allow expansion of bash aliases (Default set)
-#shopt -s extglob			# required for programable expansion (Default set)
+shopt -s extglob			# required for programable expansion (Default set)
 shopt -s no_empty_cmd_completion	# do not attempt to auto complete empty command line
 #shopt -s nocaseglob			# match as case insensitive when expanding file names
 #shopt -s nocasematch			# matches patterns as case-insensitive matching while executing case or [[ conditional commands.

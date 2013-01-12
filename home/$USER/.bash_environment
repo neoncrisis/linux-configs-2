@@ -1,7 +1,0 @@
-## Set PATH
-export PATH=$PATH:/usr/bin/vendor_perl/
-
-## Misc
-export DE=generic    # Make xdg-open work without DE
-export BROWSER=iron
-export EDITOR=geany
