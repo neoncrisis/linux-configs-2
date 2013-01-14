@@ -1,3 +1,7 @@
+## Cache files
+*.cache
+
+## 
 .config/sublime-text-2/Settings/License.sublime_license
 .config/sublime-text-2/Settings/Session.sublime_session
-*.cache
+.config/sublime-text-2/Packages/User/Package Control.last-run

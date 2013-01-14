@@ -124,6 +124,7 @@ ${color green}${downspeed eth0}/s                                  ${alignr}${co
 ${color green}${downspeedgraph eth0 20,150} ${alignr}${color #FF0009}${upspeedgraph eth0 20,150}
 ${color green}Total:${totaldown eth0}  ${alignr}${color #FF0009}Total:${totalup eth0}
 ${else}${if_up wlan0}
+
 ## WLAN0
 ${color #B8FF00}WiFi:${color}${alignr}${color orange}${wireless_essid wlan0}${color}
 Internal: ${alignr}${addr wlan0}
@@ -134,6 +135,18 @@ ${color green}${downspeed wlan0}/s    ${color #FF0009} ${alignr}${upspeed wlan0}
 ${color green}${downspeedgraph wlan0 20,150} ${alignr}${color #FF0009}${upspeedgraph wlan0 20,150}
 ${color green}Total: ${totaldown wlan0}  ${alignr}${color #FF0009}Total: ${totalup wlan0}
 ${color}Mode: ${wireless_mode wlan0} ${alignr}AP: ${wireless_ap wlan0}
+${else}${if_up eth1}
+
+## ETH1
+${color #B8FF00}WiFi:${color}${alignr}${color orange}${wireless_essid eth1}${color}
+Internal: ${alignr}${addr eth1}
+External: ${alignr}${exec cat /etc/externalip}
+
+${color green}Down: ${color}${alignc}       ${color orange}${wireless_bitrate eth1}${color} $alignr${color #FF0009}Up:
+${color green}${downspeed eth1}/s    ${color #FF0009} ${alignr}${upspeed eth1}/s
+${color green}${downspeedgraph eth1 20,150} ${alignr}${color #FF0009}${upspeedgraph eth1 20,150}
+${color green}Total: ${totaldown eth1}  ${alignr}${color #FF0009}Total: ${totalup eth1}
+${color}Mode: ${wireless_mode eth1} ${alignr}AP: ${wireless_ap eth1}
 
 ## USB0
 ${else}${if_up usb0}
