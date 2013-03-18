@@ -1,21 +1,15 @@
-## Wallpaper, Compositing & Conky
-nitrogen --restore &>> /tmp/nitrogen.log &
-conky -c ~/.config/conky/.conkyrc &>> /tmp/conky.log &
-xcompmgr &>> /tmp/xcompmgr.log &
-
-## Network
-/usr/bin/nm-applet --sm-disable &>> /tmp/nm-applet.log &
-
 ## Panels
-tint2 &>> /tmp/tint2.log &
-xfce4-panel &>> /tmp/xfce4-panel.log &
+tint2 &
+synapse -s &
 
 ## Automounting
-spacefm --daemon-mode &>> /tmp/spacefm.log &
+spacefm --daemon-mode &
 
 ## Volume & Clipboard Manager
-volumeicon -b &>> /tmp/volumeicon.log &
-clipit &>> /tmp/clipit.log &
+conky -c ~/.config/conky/.conkyrc &
+volumeicon &
 
-# Openbox Menu
-openbox-menu -p -o abapps.xml -t 'lxterminal -e' &
+# Misc
+hsetroot -fill /usr/share/slim/themes/slim-air/background.jpg &
+parcellite &
+xcompmgr &

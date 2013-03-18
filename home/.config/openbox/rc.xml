@@ -40,7 +40,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Shakey-Stapler-Dark</name>
+    <name>Mire v2_Blue</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -174,11 +174,7 @@
     </keybind>
     <keybind key="XF86PowerOff">
       <action name="Execute">
-        <command>oblogout</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>oblogout</name>
-        </startupnotify>
+        <command>systemctl poweroff</command>
       </action>
     </keybind>
     <keybind key="C-A-Right">
@@ -217,9 +213,7 @@
       </action>
     </keybind>
     <keybind key="W-F1">
-      <action name="Desktop">
-        <desktop>1</desktop>
-      </action>
+      <action name="Desktop"/>
     </keybind>
     <keybind key="W-F2">
       <action name="Desktop">
@@ -241,15 +235,6 @@
     </keybind>
     <keybind key="A-F4">
       <action name="Close"/>
-    </keybind>
-    <keybind key="A-F2">
-      <action name="Execute">
-        <command>gmrun</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>gmrun</name>
-        </startupnotify>
-      </action>
     </keybind>
     <keybind key="A-F3">
       <action name="Execute">
@@ -291,12 +276,12 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-b">
+    <keybind key="W-w">
       <action name="Execute">
-        <command>chromium</command>
+        <command>firefox</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>Chromium</name>
+          <name>Web Browser</name>
         </startupnotify>
       </action>
     </keybind>
@@ -311,10 +296,10 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>terminator</command>
+        <command>lxterminal</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>terminator</name>
+          <name>terminal</name>
         </startupnotify>
       </action>
     </keybind>
@@ -339,15 +324,6 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-m">
-      <action name="Execute">
-        <command>gnome-mplayer</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Gnome Media Player</name>
-        </startupnotify>
-      </action>
-    </keybind>
     <keybind key="W-l">
       <action name="Execute">
         <command>slock</command>
@@ -366,17 +342,12 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-space">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="W-s">
+    <keybind key="W-x">
       <action name="Execute">
-        <command>spacefm --find-files</command>
+        <command>conkyswitcher</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>SpaceFM Search</name>
+          <name>Switches conky</name>
         </startupnotify>
       </action>
     </keybind>
