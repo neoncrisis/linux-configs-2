@@ -1,0 +1,15 @@
+## Panels
+tint2 &
+synapse -s &
+
+## Automounting
+spacefm --daemon-mode &
+
+## Volume & Clipboard Manager
+conky -c ~/.config/conky/.conkyrc &
+volumeicon &
+
+# Misc
+hsetroot -fill /usr/share/slim/themes/slim-air/background.jpg &
+parcellite &
+xcompmgr &
