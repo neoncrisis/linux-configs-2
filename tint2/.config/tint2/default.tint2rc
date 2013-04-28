@@ -99,7 +99,7 @@ battery_low_cmd = notify-send "battery low"
 battery_hide = 98
 bat1_font = sans 7
 bat2_font = sans 6
-battery_font_color = #999999 73
+battery_font_color = #999999 72
 battery_padding = 1 0
 battery_background_id = 0
 

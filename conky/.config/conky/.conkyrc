@@ -126,6 +126,18 @@ ${color green}Down:                  ${alignr}${color #FF0009}Up:
 ${color green}${downspeed eth0}/s                                  ${alignr}${color #FF0009}${upspeed eth0}/s
 ${color green}${downspeedgraph eth0 20,150} ${alignr}${color #FF0009}${upspeedgraph eth0 20,150}
 ${color green}Total:${totaldown eth0}  ${alignr}${color #FF0009}Total:${totalup eth0}
+${else}${if_up wlp3s0}
+
+## WLP3S0	
+${color #B8FF00}WiFi:${color}${alignr}${color orange}${wireless_essid wlp3s0}${color}
+Internal: ${alignr}${addr wlp3s0}
+External: ${alignr}${exec cat /etc/externalip}
+
+${color green}Down: ${color}${alignc}       ${color orange}${wireless_bitrate wlp3s0}${color} $alignr${color #FF0009}Up:
+${color green}${downspeed wlp3s0}/s    ${color #FF0009} ${alignr}${upspeed wlp3s0}/s
+${color green}${downspeedgraph wlp3s0 20,150} ${alignr}${color #FF0009}${upspeedgraph wlp3s0 20,150}
+${color green}Total: ${totaldown wlp3s0}  ${alignr}${color #FF0009}Total: ${totalup wlp3s0}
+${color}Mode: ${wireless_mode wlp3s0} ${alignr}AP: ${wireless_ap wlp3s0}
 ${else}${if_up wlan0}
 
 ## WLAN0

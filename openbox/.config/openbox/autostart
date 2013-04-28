@@ -1,6 +1,6 @@
 ## Panels
 tint2 &
-synapse -s &
+#synapse -s &
 
 ## Automounting
 spacefm --daemon-mode &
@@ -10,6 +10,6 @@ conky -c ~/.config/conky/.conkyrc &
 volumeicon &
 
 # Misc
-hsetroot -fill /usr/share/slim/themes/slim-air/background.jpg &
+nitrogen --restore &
 parcellite &
 xcompmgr &

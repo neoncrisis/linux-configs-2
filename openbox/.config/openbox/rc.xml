@@ -40,8 +40,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Mire v2_Blue</name>
-    <titleLayout>NLIMC</titleLayout>
+    <name>Zukitwo-Dark</name>
+    <titleLayout>L</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
