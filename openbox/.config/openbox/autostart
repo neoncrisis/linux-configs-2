@@ -1,6 +1,5 @@
 ## Panels
 tint2 &
-#synapse -s &
 
 ## Automounting
 spacefm --daemon-mode &
@@ -11,5 +10,5 @@ volumeicon &
 
 # Misc
 nitrogen --restore &
-parcellite &
+#clipit &
 xcompmgr &
