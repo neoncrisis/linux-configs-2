@@ -3,9 +3,11 @@
 [keybindings]
 [profiles]
   [[default]]
+    background_image = None
     background_darkness = 0.78
     urgent_bell = True
     background_type = transparent
+    scrollbar_position = hidden
     show_titlebar = False
     cursor_shape = ibeam
     copy_on_selection = True
